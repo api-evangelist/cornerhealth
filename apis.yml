@@ -1,8 +1,25 @@
 aid: cornerhealth
-name: Cornerhealth
-description: 'Cornerhealth is a company surfaced as a portfolio company of homebrew and added to the API
-  Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting the
-  enrichment pipeline.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cornerhealth.png
+name: Corner Health
+description: 'Corner Health is a primary care provider network operating in Arizona and Washington that
+  connects patients with independent nurse practitioners and advanced practice registered nurses (APRNs).
+  The company offers everyday and preventative care, chronic condition management, women''s health,
+  weight management and metabolic health, and hormone management, with longer appointment times,
+  acceptance of major insurance plans, same-day/evening/Saturday availability, and continuity with the
+  same provider across visits. It is a patient-facing healthcare service that publishes no public
+  developer program, API, or technical documentation; this profile was surfaced as a portfolio company
+  of homebrew and enriched with verified identity and domain-security signals.'
 url: https://raw.githubusercontent.com/api-evangelist/cornerhealth/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Primary Care
+- Telehealth
+- Nurse Practitioners
+- Arizona
+- Washington
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cornerhealth-domain-security.yml
 - type: Website
   url: https://www.cornerhealth.com
+- type: PrivacyPolicy
+  url: https://cornerhealth.notion.site/Corner-Health-Privacy-Policy-ec7dc49e2d9b42838f1268a4757fb419
+- type: TermsOfService
+  url: https://cornerhealth.notion.site/
+- type: Support
+  url: mailto:support@cornerhealth.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
